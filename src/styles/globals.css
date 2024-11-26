@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(255, 255, 255)
+}
+
+.Topic1{
+  text-align: center;
+  font-size: 40pt;
+  font-family: 'forzaboldregular';
+  letter-spacing: 5px;
+}
+.Center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.column {
+  display: flex;
+  column-count: 2;
+  column-gap: 250px;
+  font-size: 25pt;
+  font-family: 'forzaboldregular';
+  padding: 20px;
+}
+.smallColumn {
+  display: flex;
+  column-count: 2;
+  column-gap: 0px;
+  font-size: 25pt;
+  font-family: 'forzaboldregular';
+  padding-left: 20px;
+}
+p{
+  font-size: 25pt;
+  font-family: 'forzaboldregular';
+  padding-left: 50px;
+}
+.flex-center{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+}
+.artimg {
+  width: 100%;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+}
