@@ -8,13 +8,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-<div>
-    <div style={{backgroundColor:"#9ED7FF"}}>
+    <div style={{width:"100%", height:"100%",backgroundColor:"#9ED7FF"}}>
         <div>
             <Image src={heading}/>
         </div>
         <div className='column'>
-            <div>
+        <div>
             <p>
                 Name : Natchanan Kitprayoon
             </p>
@@ -41,13 +40,10 @@ export default function Home() {
                 <Image src={phone} style={{marginLeft:"35px", width:"35px", height:"35px"}}/>
                 <p>096 185 9907</p>
             </div>
-            </div>
-            <div>
+        </div>
             <Image src={profile}/>
-            </div>
         </div>
         <br></br><br></br>
     </div>
-</div>
 )
 }
